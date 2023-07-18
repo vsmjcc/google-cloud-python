@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -41,7 +41,7 @@ class kms_inventoryCallTransformer(cst.CSTTransformer):
     METHOD_TO_PARAMS: Dict[str, Tuple[str]] = {
         'get_protected_resources_summary': ('name', ),
         'list_crypto_keys': ('parent', 'page_size', 'page_token', ),
-        'search_protected_resources': ('scope', 'crypto_key', 'page_size', 'page_token', ),
+        'search_protected_resources': ('scope', 'crypto_key', 'page_size', 'page_token', 'resource_types', ),
     }
 
     def leave_Call(self, original: cst.Call, updated: cst.Call) -> cst.CSTNode:

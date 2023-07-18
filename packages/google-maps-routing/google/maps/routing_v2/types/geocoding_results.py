@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -87,6 +87,7 @@ class GeocodedWaypoint(proto.Message):
         type_ (MutableSequence[str]):
             The type(s) of the result, in the form of
             zero or more type tags. Supported types:
+
             https://developers.google.com/maps/documentation/geocoding/requests-geocoding#Types
         partial_match (bool):
             Indicates that the geocoder did not return an

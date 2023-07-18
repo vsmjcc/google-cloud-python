@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -807,6 +807,7 @@ class SecurityCenterClient(metaclass=SecurityCenterClientMeta):
                 The request object. Request message for bulk findings
                 update.
                 Note:
+
                 1. If multiple bulk update requests
                 match the same resource, the order in
                 which they get executed is not defined.
@@ -2028,8 +2029,8 @@ class SecurityCenterClient(metaclass=SecurityCenterClientMeta):
                 The request object. Request message for ``GetIamPolicy`` method.
             resource (str):
                 REQUIRED: The resource for which the
-                policy is being requested. See the
-                operation documentation for the
+                policy is being requested.
+                See the operation documentation for the
                 appropriate value for this field.
 
                 This corresponds to the ``resource`` field
@@ -4496,8 +4497,8 @@ class SecurityCenterClient(metaclass=SecurityCenterClientMeta):
                 The request object. Request message for ``SetIamPolicy`` method.
             resource (str):
                 REQUIRED: The resource for which the
-                policy is being specified. See the
-                operation documentation for the
+                policy is being specified.
+                See the operation documentation for the
                 appropriate value for this field.
 
                 This corresponds to the ``resource`` field
@@ -4661,8 +4662,8 @@ class SecurityCenterClient(metaclass=SecurityCenterClientMeta):
                 The request object. Request message for ``TestIamPermissions`` method.
             resource (str):
                 REQUIRED: The resource for which the
-                policy detail is being requested. See
-                the operation documentation for the
+                policy detail is being requested.
+                See the operation documentation for the
                 appropriate value for this field.
 
                 This corresponds to the ``resource`` field

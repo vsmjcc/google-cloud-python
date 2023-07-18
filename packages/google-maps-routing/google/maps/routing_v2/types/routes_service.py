@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -589,8 +589,8 @@ class RouteMatrixElement(proto.Message):
             consideration.
         travel_advisory (google.maps.routing_v2.types.RouteTravelAdvisory):
             Additional information about the route. For
-            example: restriction information and toll
-            information
+            example: restriction
+            information and toll information
         fallback_info (google.maps.routing_v2.types.FallbackInfo):
             In some cases when the server is not able to
             compute the route with the given preferences for

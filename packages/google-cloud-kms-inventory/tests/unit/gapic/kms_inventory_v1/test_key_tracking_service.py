@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -1820,6 +1820,7 @@ def test_search_protected_resources_rest_required_fields(
             "crypto_key",
             "page_size",
             "page_token",
+            "resource_types",
         )
     )
     jsonified_request.update(unset_fields)
@@ -1890,6 +1891,7 @@ def test_search_protected_resources_rest_unset_required_fields():
                 "cryptoKey",
                 "pageSize",
                 "pageToken",
+                "resourceTypes",
             )
         )
         & set(

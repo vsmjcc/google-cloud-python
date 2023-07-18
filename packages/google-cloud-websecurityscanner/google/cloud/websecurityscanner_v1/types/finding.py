@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -43,6 +43,7 @@ class Finding(proto.Message):
             Output only. The type of the Finding.
             Detailed and up-to-date information on findings
             can be found here:
+
             https://cloud.google.com/security-command-center/docs/how-to-remediate-web-security-scanner-findings
         severity (google.cloud.websecurityscanner_v1.types.Finding.Severity):
             Output only. The severity level of the

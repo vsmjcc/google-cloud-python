@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,6 +30,7 @@ from .types.document_io import (
     GcsDocument,
     GcsDocuments,
     GcsPrefix,
+    OcrConfig,
     RawDocument,
 )
 from .types.document_processor_service import (
@@ -68,6 +69,7 @@ from .types.document_processor_service import (
     ListProcessorTypesResponse,
     ListProcessorVersionsRequest,
     ListProcessorVersionsResponse,
+    ProcessOptions,
     ProcessRequest,
     ProcessResponse,
     ReviewDocumentOperationMetadata,
@@ -141,6 +143,8 @@ __all__ = (
     "ListProcessorsRequest",
     "ListProcessorsResponse",
     "NormalizedVertex",
+    "OcrConfig",
+    "ProcessOptions",
     "ProcessRequest",
     "ProcessResponse",
     "Processor",

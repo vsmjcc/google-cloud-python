@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -384,6 +384,7 @@ class EnvironmentsAsyncClient:
             name (:class:`str`):
                 The resource name of the environment
                 to get, in the form:
+
                 "projects/{projectId}/locations/{locationId}/environments/{environmentId}"
 
                 This corresponds to the ``name`` field
@@ -487,6 +488,7 @@ class EnvironmentsAsyncClient:
             parent (:class:`str`):
                 List environments in the given
                 project and location, in the form:
+
                 "projects/{projectId}/locations/{locationId}"
 
                 This corresponds to the ``parent`` field
@@ -606,6 +608,7 @@ class EnvironmentsAsyncClient:
             name (:class:`str`):
                 The relative resource name of the
                 environment to update, in the form:
+
                 "projects/{projectId}/locations/{locationId}/environments/{environmentId}"
 
                 This corresponds to the ``name`` field
@@ -917,6 +920,7 @@ class EnvironmentsAsyncClient:
             name (:class:`str`):
                 The environment to delete, in the
                 form:
+
                 "projects/{projectId}/locations/{locationId}/environments/{environmentId}"
 
                 This corresponds to the ``name`` field

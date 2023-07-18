@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -36,12 +36,18 @@ class Type(proto.Enum):
             Type is unspecified.
         TYPE_PUBSUB_NOTIFICATION_FAILURE (1):
             A Pub/Sub notification failed to be sent.
+        TYPE_RESOURCE_STATE_CHANGE (3):
+            Resource state changed.
+        TYPE_PROCESS_ABORTED (4):
+            A process aborted.
         TYPE_RENDER_STATUES_CHANGE (2):
             Deprecated: This field is never used. Use release_render log
             type instead.
     """
     TYPE_UNSPECIFIED = 0
     TYPE_PUBSUB_NOTIFICATION_FAILURE = 1
+    TYPE_RESOURCE_STATE_CHANGE = 3
+    TYPE_PROCESS_ABORTED = 4
     TYPE_RENDER_STATUES_CHANGE = 2
 
 

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -278,6 +278,93 @@ class DocumentServiceGrpcAsyncIOTransport(DocumentServiceTransport):
                 response_deserializer=operations_pb2.Operation.FromString,
             )
         return self._stubs["update_dataset"]
+
+    @property
+    def import_documents(
+        self,
+    ) -> Callable[
+        [document_service.ImportDocumentsRequest], Awaitable[operations_pb2.Operation]
+    ]:
+        r"""Return a callable for the import documents method over gRPC.
+
+        Import documents into a dataset.
+
+        Returns:
+            Callable[[~.ImportDocumentsRequest],
+                    Awaitable[~.Operation]]:
+                A function that, when called, will call the underlying RPC
+                on the server.
+        """
+        # Generate a "stub function" on-the-fly which will actually make
+        # the request.
+        # gRPC handles serialization and deserialization, so we just need
+        # to pass in the functions for each.
+        if "import_documents" not in self._stubs:
+            self._stubs["import_documents"] = self.grpc_channel.unary_unary(
+                "/google.cloud.documentai.v1beta3.DocumentService/ImportDocuments",
+                request_serializer=document_service.ImportDocumentsRequest.serialize,
+                response_deserializer=operations_pb2.Operation.FromString,
+            )
+        return self._stubs["import_documents"]
+
+    @property
+    def get_document(
+        self,
+    ) -> Callable[
+        [document_service.GetDocumentRequest],
+        Awaitable[document_service.GetDocumentResponse],
+    ]:
+        r"""Return a callable for the get document method over gRPC.
+
+        Returns relevant fields present in the requested
+        document.
+
+        Returns:
+            Callable[[~.GetDocumentRequest],
+                    Awaitable[~.GetDocumentResponse]]:
+                A function that, when called, will call the underlying RPC
+                on the server.
+        """
+        # Generate a "stub function" on-the-fly which will actually make
+        # the request.
+        # gRPC handles serialization and deserialization, so we just need
+        # to pass in the functions for each.
+        if "get_document" not in self._stubs:
+            self._stubs["get_document"] = self.grpc_channel.unary_unary(
+                "/google.cloud.documentai.v1beta3.DocumentService/GetDocument",
+                request_serializer=document_service.GetDocumentRequest.serialize,
+                response_deserializer=document_service.GetDocumentResponse.deserialize,
+            )
+        return self._stubs["get_document"]
+
+    @property
+    def batch_delete_documents(
+        self,
+    ) -> Callable[
+        [document_service.BatchDeleteDocumentsRequest],
+        Awaitable[operations_pb2.Operation],
+    ]:
+        r"""Return a callable for the batch delete documents method over gRPC.
+
+        Deletes a set of documents.
+
+        Returns:
+            Callable[[~.BatchDeleteDocumentsRequest],
+                    Awaitable[~.Operation]]:
+                A function that, when called, will call the underlying RPC
+                on the server.
+        """
+        # Generate a "stub function" on-the-fly which will actually make
+        # the request.
+        # gRPC handles serialization and deserialization, so we just need
+        # to pass in the functions for each.
+        if "batch_delete_documents" not in self._stubs:
+            self._stubs["batch_delete_documents"] = self.grpc_channel.unary_unary(
+                "/google.cloud.documentai.v1beta3.DocumentService/BatchDeleteDocuments",
+                request_serializer=document_service.BatchDeleteDocumentsRequest.serialize,
+                response_deserializer=operations_pb2.Operation.FromString,
+            )
+        return self._stubs["batch_delete_documents"]
 
     @property
     def get_dataset_schema(

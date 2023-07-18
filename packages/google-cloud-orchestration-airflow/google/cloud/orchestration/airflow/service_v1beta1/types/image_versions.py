@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ class ListImageVersionsRequest(proto.Message):
         parent (str):
             List ImageVersions in the given project and
             location, in the form:
+
             "projects/{projectId}/locations/{locationId}".
         page_size (int):
             The maximum number of image_versions to return.
@@ -99,7 +100,9 @@ class ImageVersion(proto.Message):
     Attributes:
         image_version_id (str):
             The string identifier of the ImageVersion, in
-            the form: "composer-x.y.z-airflow-a.b.c".
+            the form:
+
+            "composer-x.y.z-airflow-a.b.c".
         is_default (bool):
             Whether this is the default ImageVersion used
             by Composer during environment creation if no

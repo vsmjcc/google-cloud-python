@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -39,6 +39,7 @@ class CheckError(proto.Message):
             Subject to whom this error applies. See the
             specific code enum for more details on this
             field. For example:
+
             - "project:<project-id or project-number>"
             - "folder:<folder-id>"
             - "organization:<organization-id>".

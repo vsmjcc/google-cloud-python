@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -60,6 +60,7 @@ class Execution(proto.Message):
         name (str):
             Output only. The resource name of the
             execution. Format:
+
             projects/{project}/locations/{location}/workflows/{workflow}/executions/{execution}
         start_time (google.protobuf.timestamp_pb2.Timestamp):
             Output only. Marks the beginning of
@@ -281,6 +282,7 @@ class GetExecutionRequest(proto.Message):
         name (str):
             Required. Name of the execution to be
             retrieved. Format:
+
             projects/{project}/locations/{location}/workflows/{workflow}/executions/{execution}
         view (google.cloud.workflows.executions_v1beta.types.ExecutionView):
             Optional. A view defining which fields should
@@ -308,6 +310,7 @@ class CancelExecutionRequest(proto.Message):
         name (str):
             Required. Name of the execution to be
             cancelled. Format:
+
             projects/{project}/locations/{location}/workflows/{workflow}/executions/{execution}
     """
 

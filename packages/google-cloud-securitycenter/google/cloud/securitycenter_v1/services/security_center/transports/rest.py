@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -1735,6 +1735,7 @@ class SecurityCenterRestTransport(SecurityCenterTransport):
                     The request object. Request message for bulk findings
                 update.
                 Note:
+
                 1. If multiple bulk update requests
                 match the same resource, the order in
                 which they get executed is not defined.

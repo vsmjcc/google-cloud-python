@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -84,12 +84,12 @@ class TollPass(proto.Enum):
             Indonesia.
             E-card provided by multiple banks used to pay
             for tolls. All e-cards via banks are charged the
-            same so only one enum value is needed. E.g. -
-            Bank Mandiri
-            https://www.bankmandiri.co.id/e-money - BCA
-            https://www.bca.co.id/flazz
+            same so only one enum value is needed. E.g.
+            - Bank Mandiri
+              https://www.bankmandiri.co.id/e-money
+            - BCA https://www.bca.co.id/flazz
             - BNI
-            https://www.bni.co.id/id-id/ebanking/tapcash
+              https://www.bni.co.id/id-id/ebanking/tapcash
         IN_FASTAG (78):
             India.
         IN_LOCAL_HP_PLATE_EXEMPT (79):

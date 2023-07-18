@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -1887,7 +1887,9 @@ class RecaptchaEnterpriseServiceClient(metaclass=RecaptchaEnterpriseServiceClien
                 Required. The name of the project to
                 search related account group memberships
                 from. Specify the project name in the
-                following format: "projects/{project}".
+                following format:
+
+                "projects/{project}".
 
                 This corresponds to the ``project`` field
                 on the ``request`` instance; if ``request`` is provided, this

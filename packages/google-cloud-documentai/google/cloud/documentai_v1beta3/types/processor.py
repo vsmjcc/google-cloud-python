@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -61,7 +61,8 @@ class ProcessorVersion(proto.Message):
             The KMS key version with which data is
             encrypted.
         google_managed (bool):
-            Denotes that this ``ProcessorVersion`` is managed by Google.
+            Output only. Denotes that this ``ProcessorVersion`` is
+            managed by Google.
         deprecation_info (google.cloud.documentai_v1beta3.types.ProcessorVersion.DeprecationInfo):
             If set, information about the eventual
             deprecation of this version.

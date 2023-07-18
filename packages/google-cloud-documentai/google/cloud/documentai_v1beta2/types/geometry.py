@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -38,7 +38,8 @@ class Vertex(proto.Message):
         x (int):
             X coordinate.
         y (int):
-            Y coordinate.
+            Y coordinate (starts from the top of the
+            image).
     """
 
     x: int = proto.Field(
@@ -60,7 +61,8 @@ class NormalizedVertex(proto.Message):
         x (float):
             X coordinate.
         y (float):
-            Y coordinate.
+            Y coordinate (starts from the top of the
+            image).
     """
 
     x: float = proto.Field(

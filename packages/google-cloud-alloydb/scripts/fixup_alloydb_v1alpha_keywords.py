@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -51,7 +51,7 @@ class alloydbCallTransformer(cst.CSTTransformer):
         'delete_instance': ('name', 'request_id', 'etag', 'validate_only', ),
         'delete_user': ('name', 'request_id', 'validate_only', ),
         'failover_instance': ('name', 'request_id', 'validate_only', ),
-        'generate_client_certificate': ('parent', 'request_id', 'pem_csr', 'cert_duration', 'public_key', ),
+        'generate_client_certificate': ('parent', 'request_id', 'pem_csr', 'cert_duration', 'public_key', 'use_metadata_exchange', ),
         'get_backup': ('name', ),
         'get_cluster': ('name', 'view', ),
         'get_connection_info': ('parent', 'request_id', ),

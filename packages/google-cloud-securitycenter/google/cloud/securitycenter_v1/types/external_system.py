@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ class ExternalSystem(proto.Message):
         name (str):
             Full resource name of the external system,
             for example:
+
             "organizations/1234/sources/5678/findings/123456/externalSystems/jira",
             "folders/1234/sources/5678/findings/123456/externalSystems/jira",
             "projects/1234/sources/5678/findings/123456/externalSystems/jira".

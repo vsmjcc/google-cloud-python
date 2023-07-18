@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -752,6 +752,7 @@ class ExecutionsClient(metaclass=ExecutionsClientMeta):
             name (str):
                 Required. Name of the execution to be
                 retrieved. Format:
+
                 projects/{project}/locations/{location}/workflows/{workflow}/executions/{execution}
 
                 This corresponds to the ``name`` field
@@ -856,6 +857,7 @@ class ExecutionsClient(metaclass=ExecutionsClientMeta):
             name (str):
                 Required. Name of the execution to be
                 cancelled. Format:
+
                 projects/{project}/locations/{location}/workflows/{workflow}/executions/{execution}
 
                 This corresponds to the ``name`` field

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -108,6 +108,7 @@ __protobuf__ = proto.module(
 class BulkMuteFindingsRequest(proto.Message):
     r"""Request message for bulk findings update.
     Note:
+
     1. If multiple bulk update requests match the same resource, the
     order in which they get executed is not defined.
     2. Once a bulk operation is started, there is no way to stop it.

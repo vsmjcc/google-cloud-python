@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@ from .services.document_understanding_service import (
     DocumentUnderstandingServiceAsyncClient,
     DocumentUnderstandingServiceClient,
 )
+from .types.barcode import Barcode
 from .types.document import Document
 from .types.document_understanding import (
     AutoMlParams,
@@ -46,6 +47,7 @@ from .types.geometry import BoundingPoly, NormalizedVertex, Vertex
 __all__ = (
     "DocumentUnderstandingServiceAsyncClient",
     "AutoMlParams",
+    "Barcode",
     "BatchProcessDocumentsRequest",
     "BatchProcessDocumentsResponse",
     "BoundingPoly",

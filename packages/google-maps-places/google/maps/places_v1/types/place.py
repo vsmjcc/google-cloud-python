@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -281,9 +281,11 @@ class Place(proto.Message):
 
     class PlusCode(proto.Message):
         r"""Plus code (http://plus.codes) is a location reference with
-        two formats: global code defining a 14mx14m (1/8000th of a
-        degree) or smaller rectangle, and compound code, replacing the
-        prefix with a reference location.
+        two formats:
+
+        global code defining a 14mx14m (1/8000th of a degree) or smaller
+        rectangle, and compound code, replacing the prefix with a
+        reference location.
 
         Attributes:
             global_code (str):
